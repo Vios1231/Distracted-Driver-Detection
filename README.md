@@ -10,10 +10,8 @@ AI-powered web application for detecting distracted driving behaviors from image
 Distracted Driver Detection/
 ├── backend/
 │   ├── app.py
-│   ├── requirements.txt
-│   ├── model/            # (optional) ML model files
-│   ├── venv/             # local virtual environment (ignored by git)
-│
+│   ├── test.py
+│            
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -26,6 +24,7 @@ Distracted Driver Detection/
 │
 ├── .gitignore
 ├── README.md
+├── requirements.txt
 ```
 
 ---
@@ -63,6 +62,7 @@ cd distracted-driver-detection
 cd backend
 python -m venv venv
 venv\Scripts\activate   # Windows
+source venv/bin/activate  # macOS/Linux
 pip install -r requirements.txt
 uvicorn app:app --reload
 ```
@@ -113,14 +113,6 @@ Example response:
   "note": "dummy feature used"
 }
 ```
-
----
-
-## 🧠 Current Status
-
-* ✅ Frontend upload UI
-* ✅ Backend API working
-* 🔄 Model integration (WIP)
 
 ---
 

@@ -34,4 +34,4 @@ yarn-error.log*
 # ===== Jupyter =====
 .ipynb_checkpoints/
 
-node_modules/
+node_modules/w
